@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Ayam Geprek 1945</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WARUNG AYAM GEPREK 1945</h1>
+      <h2>Beli Ayam Geprek Online</h2>
+    </header>
+
+    <main>
+      <form action="/place_order" method="post">
+        <label for="jenis_potong">Jenis Potong:</label>
+        <input type="text" id="jenis_potong" name="jenis_potong" required />
+
+        <label for="banyak_potong">Banyak Potong:</label>
+        <input type="number" id="banyak_potong" name="banyak_potong" required />
+
+        <button type="submit">Add Order</button>
+      </form>
+
+      <form action="/view_orders" method="get">
+        <button type="submit">View Orders</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Warung Ayam Geprek 1945</p>
+    </footer>
+  </body>
+</html>
